@@ -42,11 +42,9 @@ fun countSumOfTwoRepresentations2(n: Int, l: Int, r: Int): Int {
 
     	if(index <= (n - index) && (n - index) <= r) count++
 
-
     	index++
 
     }
-
     
     return count;
 
