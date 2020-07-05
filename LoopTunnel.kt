@@ -49,3 +49,35 @@ fun countSumOfTwoRepresentations2(n: Int, l: Int, r: Int): Int {
     return count;
 
 }
+
+/**
+ * Calculates the amount of money given by the magical well
+ * when casting a marble
+ *
+ * Problem #27
+ *
+ * @author Carlos L. Cuenca
+ * @date 07/05/2020
+ */
+
+fun magicalWell(a: Int, b: Int, n: Int): Int {
+
+	var salary = 0
+	var varA = a
+	var varB = b
+	var varN = n
+
+	while (varN > 0) {
+
+		salary += varA*varB
+
+		varA++
+		varB++
+
+		varN--
+
+	}
+
+	return salary
+
+}
