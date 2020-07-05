@@ -62,22 +62,8 @@ fun countSumOfTwoRepresentations2(n: Int, l: Int, r: Int): Int {
 
 fun magicalWell(a: Int, b: Int, n: Int): Int {
 
-	var salary = 0
-	var varA = a
-	var varB = b
-	var varN = n
+	if(n == 0) return 0
 
-	while (varN > 0) {
-
-		salary += varA*varB
-
-		varA++
-		varB++
-
-		varN--
-
-	}
-
-	return salary
+	return a*b + magicalWell(a + 1, b + 1, n - 1)
 
 }
