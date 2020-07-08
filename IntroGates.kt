@@ -1,4 +1,4 @@
-class IntroGrates {
+class IntroGates {
 
 	/**
 	 * Returns the sum of the given number's digits
