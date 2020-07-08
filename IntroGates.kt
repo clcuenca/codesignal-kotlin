@@ -34,7 +34,26 @@ class IntroGates {
 
 	}
 
+	/**
+	 * Returns the total amount of whole candy pieces that will be eaten by n children,
+	 * such that each child eats the same amount of candy as the other children
+	 * without splitting a candy piece given m total candies.
+	 * 
+	 * Problem #3
+	 *
+	 * @author Carlos L. Cuenca
+	 * @date 07/08/2020
+	 * @param int n The total amount of children
+	 * @param int m The total amount of candy pieces
+	 * @param int The total amount of candy that will be eaten between 
+	 * the children
+	 */
 
+	fun candies(n: Int, m: Int): Int {
 
+		return n * (m / n).toInt()
 
+	}
+
+	
 }
