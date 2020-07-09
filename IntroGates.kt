@@ -153,17 +153,17 @@ class IntroGates {
 
 	fun phoneCall(min1: Int, min2_10: Int, min11: Int, s: Int): Int {
     
-    if((s - min1) < 0) return 0
-    
-    if((s - min1 - 9*min2_10) < 0) {
-        
-        return (s - min1) / min2_10 + 1
-        
-    }
-    
-    return (s - min1 - 9*min2_10) / min11 + 10
-    
-}
+	    if((s - min1) < 0) return 0
+	    
+	    if((s - min1 - 9*min2_10) < 0) {
+	        
+	        return (s - min1) / min2_10 + 1
+	        
+	    }
+	    
+	    return (s - min1 - 9*min2_10) / min11 + 10
+	    
+	}
 
 
 
