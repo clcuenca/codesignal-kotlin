@@ -53,7 +53,30 @@ class IntroGates {
 
 		return n * (m / n).toInt()
 
+	} 
+
+	/**
+	 * Returns the amount of people behind you, and to the left given the current
+	 * rows and columns in the theater and your current row and column within the 
+	 * theater
+	 *
+	 * Problem #4
+	 * 
+	 * @author Carlos L. Cuenca
+	 * @date 07/08/2020
+	 * @param int nCols The amount of columns in the theater
+	 * @param int nRows The amount of rows in the theater
+	 * @param int col The current column you're residing in
+	 * @param int row The current row you're residing in
+	 */
+
+	fun seatsInTheater(nCols: Int, nRows: Int, col: Int, row: Int): Int {
+	    
+	    return (nCols - col + 1) * (nRows - row)
+	    
 	}
 
 	
+
+
 }
