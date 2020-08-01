@@ -95,6 +95,22 @@ class AtTheCrossroads {
 
     }
 
-    
+    fun metroCard(lastNumberOfDays: Int): MutableList<Int> {
+
+        val returnArray = mutableListOf<Int>()
+
+        if(lastNumberOfDays == 31) {
+
+            returnArray.addAll(listOf(28,30,31))
+
+        } else {
+
+            returnArray.addAll(listOf(31))
+
+        }
+
+        return returnArray
+
+    }
 
 }
