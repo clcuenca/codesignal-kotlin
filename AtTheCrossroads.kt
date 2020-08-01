@@ -89,4 +89,12 @@ class AtTheCrossroads {
 
     }
 
+    fun willYou(young: Boolean, beautiful: Boolean, loved: Boolean): Boolean {
+
+        return (young and beautiful and !loved) xor (loved and !(young and beautiful))
+
+    }
+
+    
+
 }
