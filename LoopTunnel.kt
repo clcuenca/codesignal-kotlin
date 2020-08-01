@@ -1,69 +1,73 @@
 
-/**
- * Finds the smallest factorial result relative to the given integer n
- *
- * Problem #25
- *
- * @author Carlos L. Cuenca
- * @date 05/19/2020
- */
+class LoopTunnel {
 
-fun leastFactorial(n: Int): Int {
+	/**
+	 * Finds the smallest factorial result relative to the given integer n
+	 *
+	 * Problem #25
+	 *
+	 * @author Carlos L. Cuenca
+	 * @date 05/19/2020
+	 */
 
-	var factorial = 1
-	var result    = 1
+	fun leastFactorial(n: Int): Int {
 
-	while(result < n) {
+		var factorial = 1
+		var result = 1
 
-		factorial++
-		result *= factorial
+		while (result < n) {
+
+			factorial++
+			result *= factorial
+
+		}
+
+		return result
 
 	}
 
-	return result
+	/**
+	 * Returns the amount of ways to sum the integer n
+	 *
+	 * Problem #26
+	 *
+	 * @author Carlos L. Cuenca
+	 * @date 05/19/2020
+	 */
 
-}
+	fun countSumOfTwoRepresentations2(n: Int, l: Int, r: Int): Int {
 
-/**
- * Returns the amount of ways to sum the integer n
- *
- * Problem #26
- *
- * @author Carlos L. Cuenca
- * @date 05/19/2020
- */
+		var count = 0
+		var index = l
 
-fun countSumOfTwoRepresentations2(n: Int, l: Int, r: Int): Int {
+		while (index <= r) {
 
-    var count = 0
-    var index = l
+			if (index <= (n - index) && (n - index) <= r) count++
 
-    while(index <= r) {
+			index++
 
-    	if(index <= (n - index) && (n - index) <= r) count++
+		}
 
-    	index++
+		return count;
 
-    }
-    
-    return count;
+	}
 
-}
+	/**
+	 * Calculates the amount of money given by the magical well
+	 * when casting a marble
+	 *
+	 * Problem #27
+	 *
+	 * @author Carlos L. Cuenca
+	 * @date 07/05/2020
+	 */
 
-/**
- * Calculates the amount of money given by the magical well
- * when casting a marble
- *
- * Problem #27
- *
- * @author Carlos L. Cuenca
- * @date 07/05/2020
- */
+	fun magicalWell(a: Int, b: Int, n: Int): Int {
 
-fun magicalWell(a: Int, b: Int, n: Int): Int {
+		if (n == 0) return 0
 
-	if(n == 0) return 0
+		return a * b + magicalWell(a + 1, b + 1, n - 1)
 
-	return a*b + magicalWell(a + 1, b + 1, n - 1)
+	}
 
 }
