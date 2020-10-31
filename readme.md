@@ -48,4 +48,4 @@ export PATH=$PATH:"/cygdrive/C/kotlinc/bin/"
 
 *note:* Any path is acceptable for kotlinc
 
-Compilation & execution has been tested with Cygwin
+Compilation & execution has been tested with Cygwin 
